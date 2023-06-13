@@ -1,20 +1,20 @@
 import random
 
-while True :
+while True :  # for the end game asking to play again 
     choices = ['rock','paper','scissors' ]
     player = None
-    computer = random.choice(choices)
+    computer = random.choice(choices)   
 
 
 
 
     while player not in choices :
-        player =input('rock , paper or scissors ? :').lower()
+        player =input('rock , paper or scissors ? :').lower()  # FOR INPUT YOUR CHOISE 
 
 
     if player ==computer :
         print("you : ", player)
-        print("computer : ", computer)
+        print("computer : ", computer)    # IN THE IF STATEMENT AND ELIF STATEMENTS  YOU CAN SEE DIFFERENT SITUATIONS 
         print("  tie  ")
 
     elif computer == 'rock' and player == 'paper' :
@@ -43,7 +43,7 @@ while True :
         print(" you lose ")
     yes_no = ['yes', 'no']
     play_again = None
-    while play_again not in yes_no :
+    while play_again not in yes_no : # FOR YES NO  
         play_again = input("do you want play again ? (yes /no)  ").lower()
 
     if play_again == 'no':
